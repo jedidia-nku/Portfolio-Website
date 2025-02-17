@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 ">
             <nav className="w-full flex justify-around items-center px-10 py-6">
-        <ul className="flex space-x-6 text-white">
-          <li><a href="/" className="hover:text-gray-400">Home</a></li>
-          <li><a href="/portfolio" className="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="/elevator-pitch" className="hover:text-gray-400">Elevator Pitch</a></li>
+          <ul className="flex space-x-6 text-white">
+          <li><Link href="/" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/portfolio" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/elevator-pitch" className="hover:text-gray-400">Home</Link></li>
         </ul>
       </nav>
       

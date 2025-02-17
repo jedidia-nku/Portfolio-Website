@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 export default function ElevatorPitch() {
     return (
         <div className="min-h-screen bg-gray-900 ">
             <nav className="w-full flex justify-around items-center px-10 py-6">
         <ul className="flex space-x-6 text-white">
-          <li><a href="/" className="hover:text-gray-400">Home</a></li>
-          <li><a href="/portfolio" className="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="/elevator-pitch" className="hover:text-gray-400">Elevator Pitch</a></li>
+          <li><Link href="/" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/portfolio" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/elevator-pitch" className="hover:text-gray-400">Home</Link></li>
         </ul>
       </nav>
       
@@ -15,6 +17,15 @@ export default function ElevatorPitch() {
           This page is a placeholder for my elevator pitch. A video or additional content will be added soon.
         </p>
       </main>
+      <div className="flex items-center w-full justify-center">
+          <a
+            href="/Our elevator pitch.pdf"
+            download
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+          >
+            Download Project Slide Deck 📄
+          </a>
+          </div>
       </div>
     );
   }

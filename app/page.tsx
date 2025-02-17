@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
     <section className="min-h-screen bg-gray-900 text-white ">
         <nav className="w-full flex justify-around items-center px-10 py-6">
-        <ul className="flex space-x-6">
-          <li><a href="/" className="hover:text-gray-400">Home</a></li>
-          <li><a href="/portfolio" className="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="/elevator-pitch" className="hover:text-gray-400">Elevator Pitch</a></li>
+        <ul className="flex space-x-6 text-white">
+          <li><Link href="/" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/portfolio" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/elevator-pitch" className="hover:text-gray-400">Home</Link></li>
         </ul>
       </nav>
 
@@ -37,13 +38,13 @@ const Home = () => {
           
           {/* Download Button */}
           <div className="mt-6">
-            <a
+            <Link
               href="/cv.pdf" // Replace with your actual CV file path
               download
               className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600 transition-all"
             >
              Contact Me
-            </a>
+            </Link>
           </div>
         </div>
       </div>
