@@ -3,11 +3,11 @@ import Link from 'next/link';
 export default function ElevatorPitch() {
     return (
         <div className="min-h-screen bg-gray-900 ">
-            <nav className="w-full flex justify-around items-center px-10 py-6">
-        <ul className="flex space-x-6 text-white">
+        <nav className="w-full flex justify-around items-center px-10 py-6">
+          <ul className="flex space-x-6 text-white">
           <li><Link href="/" className="hover:text-gray-400">Home</Link></li>
-          <li><Link href="/portfolio" className="hover:text-gray-400">Home</Link></li>
-          <li><Link href="/elevator-pitch" className="hover:text-gray-400">Home</Link></li>
+          <li><Link href="/portfolio" className="hover:text-gray-400">Portfolio</Link></li>
+          <li><Link href="/elevator-pitch" className="hover:text-gray-400">Elevator Pitch</Link></li>
         </ul>
       </nav>
       
